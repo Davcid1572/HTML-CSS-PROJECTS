@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: #ad5d01;
+  color: #f1f1f1;
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+  border-bottom: 0.5rem solid #221a10;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 16px;
+  max-width: 1400px;
+  padding: 20px 10px;
+}
+
+div img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*Adding hover effect to the images*/
+div img:hover {
+  transform: scale(0.95);
+}
+
+/*fills into the extra space*/
+div::after {
+  content: "";
+  width: 350px;
+}
+
+
